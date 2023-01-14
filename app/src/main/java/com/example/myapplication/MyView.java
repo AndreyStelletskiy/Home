@@ -63,7 +63,7 @@ public class MyView extends View {
         canvas.drawRect(1440,getHeight()-300,1500,getHeight()-100,paint);
         canvas.drawRect(1360,getHeight()-300,2150,getHeight()-250,paint);
         canvas.drawRect(2010,getHeight()-300,2070,getHeight()-100,paint);
-
+        // Отрисовка решётки на окне
         int a;
         paint.setColor(Color.BLACK);
         for (a = 200; a<=360; a+=15){
@@ -74,6 +74,10 @@ public class MyView extends View {
             canvas.drawLine(200,a+5,360,a+5,paint);
             System.out.println(a);
         }
+        //Отрисовка солнца
+
+        paint.setColor(Color.YELLOW);
+        canvas.drawCircle(70,70,100,paint);
 
 
 
